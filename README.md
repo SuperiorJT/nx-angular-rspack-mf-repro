@@ -1,3 +1,12 @@
+# Repro Steps
+
+1. npx create-nx-workspace@latest nx-angular-rspack-mf-repro
+2. cd nx-angular-rspack-mf-repro
+3. npx nx g @nx/angular:host apps/shell --bundler=rspack
+4. npx nx g @nx/angular:remote apps/remote --bundler=rspack --host=shell
+5. nx serve remote
+6. examine console in browser
+
 # NxAngularRspackMfRepro
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
